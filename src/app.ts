@@ -1,20 +1,10 @@
-const num: number = 16;
-
-if (num > 15) {
-  console.log("maior que 15");
-} else {
-  console.log("menor ou igual a 15");
+for (let i = 0; i < 5; ++i) {
+  console.log(i);
 }
 
-function validateUse(user: string) {
-  console.log(typeUser[user as keyof typeof typeUser]);
+let count = 0;
+
+while (count < 5) {
+  console.log(count);
+  count++;
 }
-
-const typeUser = {
-  admin: "Seja bem vindo admin",
-  student: "vc é um estudante",
-  viewer: "você pode vizualizar",
-};
-const usuario = "student";
-
-validateUse(usuario);
