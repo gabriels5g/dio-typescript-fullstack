@@ -1,10 +1,7 @@
-for (let i = 0; i < 5; ++i) {
-  console.log(i);
-}
+const array: Array<number> = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
 
-let count = 0;
+const stringArray: Array<string> = ["Gabriel", "Karol", "Diego"];
 
-while (count < 5) {
-  console.log(count);
-  count++;
-}
+array.push(20);
+
+console.log(array);
