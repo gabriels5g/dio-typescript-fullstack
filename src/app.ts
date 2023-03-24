@@ -1,7 +1,12 @@
-const array: Array<number> = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+class User {
+  name: string;
+  age: number;
 
-const stringArray: Array<string> = ["Gabriel", "Karol", "Diego"];
+  constructor(name: string, age: number) {
+    this.name = name;
+    this.age = age;
+  }
+}
 
-array.push(20);
-
-console.log(array);
+const user = new User("Gabriel", 22);
+console.log(user);
