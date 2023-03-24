@@ -1,4 +1,4 @@
-class Account {
+abstract class Account {
   name: string;
   accountNumber: number;
 
@@ -8,15 +8,24 @@ class Account {
   }
 
   deposit() {
-    return "você depositou";
+    console.log("você depositou");
   }
 
   withdraw() {
-    return "você sacou";
+    console.log("você sacou");
+  }
+
+  getValue() {
+    console.log("você consultou o saldo");
+  }
+}
+class PeopleAccount extends Account {
+  doc_id: number;
+  constructor(doc_id: number, name: string, AccountNumber: number) {
+    super(name, AccountNumber);
+    this.doc_id = doc_id;
   }
 }
 
-const newAccount = new Account("Gabriel", 1);
-newAccount.withdraw();
-
-console.log(newAccount);
+const peopleAccount = new PeopleAccount(2712, "Gabriel", 1);
+console.log(peopleAccount);
