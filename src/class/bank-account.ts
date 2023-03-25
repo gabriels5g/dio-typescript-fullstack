@@ -1,4 +1,4 @@
-abstract class Account {
+export abstract class BankAccount {
   name: string;
   accountNumber: number;
 
@@ -15,17 +15,7 @@ abstract class Account {
     console.log("você sacou");
   }
 
-  getValue() {
+  getBalance() {
     console.log("você consultou o saldo");
   }
 }
-class PeopleAccount extends Account {
-  doc_id: number;
-  constructor(doc_id: number, name: string, AccountNumber: number) {
-    super(name, AccountNumber);
-    this.doc_id = doc_id;
-  }
-}
-
-const peopleAccount = new PeopleAccount(2712, "Gabriel", 1);
-console.log(peopleAccount);
